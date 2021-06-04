@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Crello</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="desc_signup">Register with your email to get started\nYou can use your email and password\nto sign in next time onwards.</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="signin_from_signup"><u>I already have an account</u></string>
+    <string name="motto">let\'s get started!</string>
+    <string name="detail">Collaborate and work on projects with\nyour peer in real time.</string>
+    <string name="enterDesc">Enter your email and password to log in.</string>
+    <string name="createAcc"><u>Don\'t have an account? Create one!</u></string>
+    <string name="please_wait">Please Wait..</string>
+    <string name="nav_my_profile">My Profile</string>
+    <string name="nav_sign_out">Sign Out</string>
+    <string name="user_profile_image">User Profile Image</string>
+    <string name="username">Username</string>
+    <string name="my_profile">My Profile</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="upate_profile">Update</string>
+</resources>

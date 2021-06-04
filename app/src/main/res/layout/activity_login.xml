@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.SignupActivity"
+    android:background="#FFF1F0">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/Widget.AppCompat.Toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/sign_in"
+        app:titleMarginTop="14dp"
+        app:titleTextColor="@color/crello_name"/>
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter_medium"
+        android:textColor="@color/green_dark"
+        android:text="@string/enterDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSignIn" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/signInCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_marginTop="68dp"
+        android:padding="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDesc"
+        app:layout_constraintVertical_bias="0.245">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEmailSignIn"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textColorHint="#666666"
+                app:boxStrokeColor="@color/green_dark"
+                app:hintTextColor="@color/green_dark"
+                app:placeholderTextColor="@color/green_dark">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etEmailSignIn"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    android:padding="16dp"
+                    android:textColor="@color/crello_name"
+                    android:textColorHint="@color/gray" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPasswordSignIn"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:textColorHint="#666666"
+                app:boxStrokeColor="@color/green_dark"
+                app:hintTextColor="@color/green_dark"
+                app:placeholderTextColor="@color/green_dark">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etPasswordSignIn"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="@string/hint_password"
+                    android:inputType="textWebPassword"
+                    android:lines="1"
+                    android:padding="16dp"
+                    android:textColor="@color/crello_name"
+                    android:textColorHint="@color/gray" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignInActivity"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/button_fill_gradient"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/sign_in"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvAlreadyHaveAcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/createAcc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signInCardView"
+        app:layout_constraintVertical_bias="0.378"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/crello_name"
+        android:textSize="16sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

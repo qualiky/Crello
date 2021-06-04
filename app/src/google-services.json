@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "200286967018",
+    "project_id": "crello-0",
+    "storage_bucket": "crello-0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200286967018:android:0a82bb4239b9bf44c7b393",
+        "android_client_info": {
+          "package_name": "com.example.crello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200286967018-mbvbkg14vskcus56bnjav8353hs6skci.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMjJbp7DJhNKMdcbJ_djYna50aP9hv5gI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200286967018-mbvbkg14vskcus56bnjav8353hs6skci.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
